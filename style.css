@@ -1,0 +1,122 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.shadow{
+    box-shadow: 0px 40px 0px 60px hsl(217deg 53% 12%);
+    margin: auto;
+    max-width: 360px;
+    border-radius: 30px;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: 0px 30px 1px 20px hsl(217deg 49% 11%);
+}
+.nft-item-container{
+    position: relative;
+    width: 100%;
+    
+}
+.card .nft-item-photo{
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+}
+h2{
+    font-weight: 600;
+}
+h2,
+a{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+h2:hover,
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+p{
+    font-size: 18px;
+}
+.description p,
+.creator p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.price p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+.time-left p{
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+}
+hr{
+    height: 1px;
+    background-color:hsl(215, 32%, 27%);
+    border-width: 0;
+}
+.creator p{
+    font-size: 16px;
+}
+img.avatar{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 30px;
+    margin-right: 20px;
+}
+.price-time,
+.price,
+.time-left,
+.creator {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+}
+.price-time{
+    justify-content: space-between;
+}
+.price img, .time-left img{
+    margin-right: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 20px;
+  }
+  
+  .nft-item-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
