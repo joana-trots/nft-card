@@ -45,7 +45,7 @@ section {
   height: 100vh;
 }
 .shadow{
-    box-shadow: 0px 40px 0px 60px hsl(217deg 53% 12%);
+    box-shadow: 0px 40px 0px 60px rgb(12 23 40 / 76%);
     margin: auto;
     max-width: 360px;
     border-radius: 30px;
