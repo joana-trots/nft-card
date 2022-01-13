@@ -1,9 +1,41 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+:root {
+
+    /* Primary Colors */
+    --soft-blue-color: hsl(215, 51%, 70%);
+    --cyan-color: hsl(178, 100%, 50%);
+    --cyan-transparent-color: hsla(178, 100%, 50%, 0.5);
+    
+    /* Neutral Colors */
+    --very-dark-blue-color-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-color-line: hsl(215, 32%, 27%);
+    --blue-color: hsl(216, 50%, 16%);
+    --white-color: hsl(0, 0%, 100%);
+
+    /* Font families */
+    --ff-sans-serif: 'Outfit', sans-serif;
+
+    /* Font weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+
+    /* Font sizes */
+    --fs-small-text: 16px;
+    --fs-paragraph: 18px;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body{
-    font-family: 'Outfit', sans-serif;
-    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-sans-serif);
+    background-color: var(--very-dark-blue-color-bg);
 }
 section {
   display: flex;
@@ -19,7 +51,7 @@ section {
     border-radius: 30px;
 }
 .card{
-    background-color: hsl(216, 50%, 16%);
+    background-color: var(--blue-color);
     padding: 30px;
     border-radius: 20px;
     height: auto;
@@ -36,44 +68,44 @@ section {
     display: block;
 }
 h2{
-    font-weight: 600;
+    font-weight: var(--fw-semi-bold);
 }
 h2,
 a{
-    color: hsl(0, 0%, 100%);
+    color: var(--white-color);
     cursor: pointer;
 }
 h2:hover,
 a:hover {
-    color: hsl(178, 100%, 50%);
+    color: var(--cyan-color);
 }
 p{
-    font-size: 18px;
+    font-size: var(--fs-paragraph);
 }
 .description p,
 .creator p{
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
+    color: var(--soft-blue-color);
+    font-weight: var(--fw-light);
 }
 .price p {
-    color: hsl(178, 100%, 50%);
-    font-weight: 400;
+    color: var(--cyan-color);
+    font-weight: var(--fw-regular);
 }
 .time-left p{
-    color: hsl(215, 51%, 70%);
+    color: var(--soft-blue-color);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--fw-regular);
 }
 hr{
     height: 1px;
-    background-color:hsl(215, 32%, 27%);
+    background-color:var(--very-dark-blue-color-line); 
     border-width: 0;
 }
 .creator p{
-    font-size: 16px;
+    font-size: var(--fs-small-text);
 }
 img.avatar{
-    border: 1px solid hsl(0, 0%, 100%);
+    border: 1px solid var(--white-color);
     border-radius: 50%;
     height: 30px;
     margin-right: 20px;
@@ -103,7 +135,7 @@ img.avatar{
     width: 100%;
     opacity: 0;
     transition: .8s ease;
-    background-color: hsla(178, 100%, 50%, 0.5);
+    background-color: var(--cyan-transparent-color);
     border-radius: 20px;
   }
   
