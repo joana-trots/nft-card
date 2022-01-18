@@ -9,8 +9,8 @@
     --cyan-transparent-color: hsla(178, 100%, 50%, 0.5);
     
     /* Neutral Colors */
-    --very-dark-blue-color-bg: hsl(217, 54%, 11%);
-    --very-dark-blue-color-line: hsl(215, 32%, 27%);
+    --dark-blue-color-bg: hsl(217, 54%, 11%);
+    --dark-blue-color-line: hsl(215, 32%, 27%);
     --blue-color: hsl(216, 50%, 16%);
     --white-color: hsl(0, 0%, 100%);
 
@@ -35,17 +35,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: var(--ff-sans-serif);
-    background-color: var(--very-dark-blue-color-bg);
+    background-color: var(--dark-blue-color-bg);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    height: 100vh;
 }
 .shadow{
     box-shadow: 0px 40px 0px 60px rgb(12 23 40 / 76%);
@@ -101,7 +95,7 @@ p{
 }
 hr{
     height: 1px;
-    background-color:var(--very-dark-blue-color-line); 
+    background-color:var(--dark-blue-color-line); 
     border-width: 0;
 }
 .creator p{
