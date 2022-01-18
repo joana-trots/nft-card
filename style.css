@@ -80,7 +80,7 @@ p{
     font-size: var(--fs-paragraph);
 }
 .description p,
-.creator p{
+.author p{
     color: var(--soft-blue-color);
     font-weight: var(--fw-regular);
 }
@@ -98,7 +98,7 @@ hr{
     background-color:var(--dark-blue-color-line); 
     border-width: 0;
 }
-.creator p{
+.author p{
     font-size: var(--fs-small-text);
 }
 img.avatar{
@@ -110,7 +110,7 @@ img.avatar{
 .price-time,
 .price,
 .time-left,
-.creator {
+.author {
     display: flex;
     flex-direction: row;  
     align-items: center;
