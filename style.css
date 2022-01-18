@@ -82,7 +82,7 @@ p{
 .description p,
 .creator p{
     color: var(--soft-blue-color);
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
 }
 .price p {
     color: var(--cyan-color);
