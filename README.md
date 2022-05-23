@@ -1,6 +1,6 @@
-This is the NFT preview card component
+# This is the NFT preview card component
 
-# Front-end Style Guide
+## Front-end Style Guide
 
 ## Layout
 
