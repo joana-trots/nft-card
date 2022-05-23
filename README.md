@@ -1,3 +1,4 @@
+This is the NFT preview card component
 
 # Front-end Style Guide
 
