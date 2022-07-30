@@ -95,6 +95,7 @@ a{
     color: var(--white-color);
     cursor: pointer;
     transition: .8s ease;
+    text-decoration: none;
 }
 h2:hover,
 a:hover {
